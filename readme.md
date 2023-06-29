@@ -1,0 +1,146 @@
+## Hierarchy
+Certainly! Here's a tree structure representing the hierarchical relationship of loops in the provided data:
+
+- ISA
+- GS
+  - ST
+    - BGN_BeginningSegment
+    - REF_TransactionSetPolicyNumber
+    - AllN1
+      - Loop1000A
+        - N1_SponsorName
+      - Loop1000B
+        - N1_Payer
+    - Loop2000
+      - INS_MemberLevelDetail
+      - AllREF
+        - REF_SubscriberIdentifier
+        - REF_MemberSupplementalIdentifier
+      - DTP_MemberLevelDates
+      - AllNM1
+        - Loop2100A
+          - NM1_MemberName
+          - PER_MemberCommunicationsNumbers
+          - N3_MemberResidenceStreetAddress
+          - N4_MemberCity_State_ZIPCode
+          - DMG_MemberDemographics
+          - AMT_MemberPolicyAmounts
+          - LUI_MemberLanguage
+        - Loop2100B
+          - NM1_IncorrectMemberName
+          - DMG_IncorrectMemberDemographics
+        - Loop2100C
+          - NM1_MemberMailingAddress
+          - N3_MemberMailStreetAddress
+          - N4_MemberMailCity_State_ZIPCode
+        - Loop2100G
+          - NM1_ResponsiblePerson
+      - Loop2300
+        - HD_HealthCoverage
+        - DTP_HealthCoverageDates
+        - AllREF
+          - REF_HealthCoveragePolicyNumber
+        - Loop2320
+          - COB_CoordinationofBenefits
+    - LoopLS
+      - LS_AdditionalReportingCategories
+      - Loop2700
+        - LX_MemberReportingCategories
+        - Loop2750
+          - N1_ReportingCategory
+          - REF_ReportingCategoryReference
+
+Please note that this is a partial representation of the loops based on the available information in the provided data. If there are additional loops beyond the provided data, they would not be included in the tree structure.
+
+
+# full Hierarchy
+
+Certainly! Here's an expanded tree structure representing the hierarchical relationship of loops in the provided data:
+
+- ISA
+- GS
+  - ST
+    - BGN_BeginningSegment
+    - REF_TransactionSetPolicyNumber
+    - AllN1
+      - Loop1000A
+        - N1_SponsorName
+      - Loop1000B
+        - N1_Payer
+    - Loop2000
+      - INS_MemberLevelDetail
+      - AllREF
+        - REF_SubscriberIdentifier
+        - REF_MemberSupplementalIdentifier
+      - DTP_MemberLevelDates
+      - AllNM1
+        - Loop2100A
+          - NM1_MemberName
+          - PER_MemberCommunicationsNumbers
+          - N3_MemberResidenceStreetAddress
+          - N4_MemberCity_State_ZIPCode
+          - DMG_MemberDemographics
+          - AMT_MemberPolicyAmounts
+          - LUI_MemberLanguage
+        - Loop2100B
+          - NM1_IncorrectMemberName
+          - DMG_IncorrectMemberDemographics
+        - Loop2100C
+          - NM1_MemberMailingAddress
+          - N3_MemberMailStreetAddress
+          - N4_MemberMailCity_State_ZIPCode
+        - Loop2100G
+          - NM1_ResponsiblePerson
+      - Loop2300
+        - HD_HealthCoverage
+        - DTP_HealthCoverageDates
+        - AllREF
+          - REF_HealthCoveragePolicyNumber
+        - Loop2310A
+          - NM1_ReferringProvider
+          - PER_ReferringProviderContactInformation
+        - Loop2310B
+          - NM1_OrderingProvider
+          - PER_OrderingProviderContactInformation
+        - Loop2310C
+          - NM1_ServicingProvider
+          - PER_ServicingProviderContactInformation
+        - Loop2310D
+          - NM1_Subscriber
+          - DMG_SubscriberDemographics
+        - Loop2310E
+          - NM1_Dependent
+          - DMG_DependentDemographics
+        - Loop2310F
+          - NM1_ConsultingProvider
+          - PER_ConsultingProviderContactInformation
+        - Loop2310G
+          - NM1_ServiceFacilityLocation
+          - N3_ServiceFacilityStreetAddress
+          - N4_ServiceFacilityCity_State_ZIPCode
+        - Loop2310H
+          - NM1_ReferringProviderSecondaryIdentification
+        - Loop2310I
+          - NM1_OrderingProviderSecondaryIdentification
+        - Loop2310J
+          - NM1_AmbulanceDropOffLocation
+          - N3_AmbulanceDropOffLocationAddress
+          - N4_AmbulanceDropOffLocationCity_State_ZIPCode
+        - Loop2310K
+          - NM1_AmbulancePickUpLocation
+          - N3_AmbulancePickUpLocationAddress
+          - N4_AmbulancePickUpLocationCity_State_ZIPCode
+        - Loop2320
+          - COB_CoordinationofBenefits
+    - LoopLS
+      - LS_AdditionalReportingCategories
+      - Loop2700
+        - LX_MemberReportingCategories
+        - Loop2750
+          - N1_ReportingCategory
+          - REF_ReportingCategoryReference
+  - SE
+- GE
+- IEA
+
+Please note that this is a general representation of loops based on common healthcare transaction standards like HIPAA. The specific loops and segments may vary depending on the specific version of the transaction set being used.
